@@ -15,32 +15,32 @@
             <img src="Atras.svg">
         </div>
         <div class="main-title">
-            <h5>Crear Cuenta</h5>   
+            <h1>Crear Cuenta</h1>   
         </div>
     </header>
-    <form>
         <section>
             <article id="article">
+                <form>
                 <div>
                     <input type="text" id="name" name="name" placeholder="Nombre completo">  
                 </div>
                 <div id="face">
                 </div>
-                <div>
+                <div class="small">
                     <small><p>Queremos conocer tu nombre</p></small>
                     <small><p>favor incluye solo letras</p></small>
                 </div>
                 <div>
                     <input type="email" id="email" name="email" placeholder="Correo electronico">
                 </div>
-                <div>
+                <div class="small">
                     <small><p>Necesitamos tu correo electronico</p></small>
                     <small><p>Por favor verifica tu correo</p></small>
                 </div>
                 <div>
                     <input type="number" id="number" name="number" placeholder="Celular">
                 </div>
-                <div>
+                <div class="small">
                     <small><p>Necesitamos conocer tu numero celular</p></small>
                     <small><p>Por favor incluye solo numeros</p></small>
                     <small><p>Por favor verifica tu numero de celular</p></small>
@@ -51,7 +51,7 @@
                 <div id="muestra">
                     
                 </div>
-                <div>
+                <div class="small">
                     <small><p>Nesecitas una contraseña para continuar</p></small>
                     <small><p>Tu contraseña debe tener de 10 a 20 caracteres</p></small>
                     <small><p>Por favor incluyeuna letra, un numero y un caracter especial</p></small>
@@ -59,18 +59,23 @@
                 <div>
                     <input type="password" id="Confirm-Password" name="Confirm-Password" placeholder="Confirmar contraseña">
                 </div> 
-                <div>
-                    <small><p>Tus contraseñas mo coinciden</p></small>
+                <div class="small">
+                    <small id="ulti"><p>Tus contraseñas mo coinciden</p></small>
                 </div>
-                <div class="check">
-                    <label for="check"> <input type="checkbox" id="checkbox" name="checkbox"><p>Acepto los Terminos y Condiciones,
-                        la Politica de datos y la Politica de cookies.</p></label>
+                <div class="container">
+                    <label class="check">
+                        <input type="checkbox" class="checkbox" name="checkbox">
+                        <span class="sustitucion"></span>
+                        <span>Acepto los Terminos y Condiciones,
+                        la Politica de datos y la Politica de cookies.
+                        </span>
+                    </label>
                 </div>
                 <div class="enviar">
-                    <label for="submit"> <input type="submit" id="submit" name="submit"></label>
+                    <label for="submit"><input type="submit" id="submit" name="submit"></label>
                 </div>
+            </form>
             </article>
         </section>
-    </form>
 </body>
 </html>

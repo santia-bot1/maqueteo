@@ -15,7 +15,94 @@
     src: url(Poppins-MediumItalic.ttf);
     src: url(Poppins-Regular.ttf);
     src: url(Poppins-SemiBold.ttf);
-    src: url(.Poppins-SemiBoldItalicttf);
+    src: url(Poppins-SemiBoldItalic.ttf);
     src: url(Poppins-Thin.ttf);
     src: url(Poppins-ThinItalic.ttf);
+}
+#header{
+    background-color: #000fff;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: "Poppins-Bold";
+    font-size: 24;
+    margin: 0px 0px 0px 57px;
+    color:#ffffff;
+}
+.img-prin{
+    width: 26,25px;
+    height: 11,97px;
+}
+#article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: left;
+    text-align: center;
+}
+input{
+    font-family: "Poppins-Regular";
+    font-size: 20;
+    border-radius: 14px;
+    border-color: #00c6ff;
+    stroke: 1;
+    height: 49px;
+    margin-top: 0px;
+
+}
+#name{
+    margin-top: 43px;
+}
+::placeholder{
+    padding: 26px;
+    font-family: "Body";
+    font-size: 20px;
+}
+
+small p{
+    padding: 0px 0px 0px 26px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 12px;
+    font-family: caption;
+    color: #fb8179;
+}
+#ulti{
+    margin-bottom: 26px;
+}
+.container{
+    font-family: caption;
+    color: #7D7B7B;
+    margin-bottom: 26px;
+}
+.check{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sustitucion{
+    background-image: url();
+}
+.check > .checkbox{
+    display: none;
+}
+.check > .sustitucion{
+    display: inline-block;
+    width: 16,5px;
+    height: 16,5px;
+    margin-right: 26px;
+}
+.check > .checkbox + .sustitucion{
+    background-image: url();
+}
+#submit{
+    font-family: "Poppins-Medium";
+    font-size: 18px;
+    border-radius: 100px;
+    width: 171px;
+    height: 41px;
 }
