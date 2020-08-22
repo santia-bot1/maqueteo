@@ -1,0 +1,16 @@
+.Mostrar-contrasena, .Ocultar-contrasena{
+	background: url(sprites.png) no-repeat;
+}
+
+.Mostrar-contrasena{
+	background-position: 0 0;
+	width: 20px;
+	height: 17px;
+}
+
+.Ocultar-contrasena{
+	background-position: -30px -2px ;
+	width: 20px;
+	height: 13px;
+}
+
