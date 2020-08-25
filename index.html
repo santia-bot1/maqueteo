@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="valoracion/*">
     <link rel="stylesheet" type="text/css" href="Poppins.css/*">
     <link rel="stylesheet" href="Sprite.Check.svg">
+    <link rel="stylesheet" href="radio-check.png">
+    <link rel="stylesheet" href="radio-uncheck.png">
 </head>
 <body>
     <header id="header">
@@ -22,7 +24,7 @@
         <section id="section">
             <article id="article">
                 <form>
-                <div>
+                <div class="margin-top">
                     <input type="text" id="name" name="name" placeholder="Nombre completo">  
                 </div>
                 <div class="face">
@@ -32,14 +34,14 @@
                     <small><p>Queremos conocer tu nombre</p></small>
                     <small><p>favor incluye solo letras</p></small>
                 </div>
-                <div>
+                <div class="margin-top"> 
                     <input type="email" id="email" name="email" placeholder="Correo electronico">
                 </div>
                 <div class="small">
                     <small><p>Necesitamos tu correo electronico</p></small>
                     <small><p>Por favor verifica tu correo</p></small>
                 </div>
-                <div>
+                <div class="margin-top">
                     <input type="number" id="number" name="number" placeholder="Celular">
                 </div>
                 <div class="small">
@@ -47,8 +49,10 @@
                     <small><p>Por favor incluye solo numeros</p></small>
                     <small><p>Por favor verifica tu numero de celular</p></small>
                 </div>
+                <div class="margin-top">
                 <div class="contra">
                     <input type="password" id="password" name="password" placeholder="Contraseña">
+                </div>
                 </div>
                 <div id="muestra">
                     
@@ -58,19 +62,22 @@
                     <small><p>Tu contraseña debe tener de 10 a 20 caracteres</p></small>
                     <small><p>Por favor incluyeuna letra, un numero y un caracter especial</p></small>
                 </div>
-                <div>
+                <div class="margin-top">
                     <input type="password" id="Confirm-Password" name="Confirm-Password" placeholder="Confirmar contraseña">
                 </div> 
                 <div class="small">
                     <small><p id="ultimo">Tus contraseñas o coinciden</p></small>
                 </div>
-                <div id="container">
-                    <input type="checkbox" id="checkbox" name="checkbox"> 
-                    <label for="checkbox"><span id="cookie">
-                        chek 1</span></label>
-                        <p>Acepto los Terminos y Condiciones,
-                            la Politica de datos y la Politica de cookies.</p>
-                </div>
+                
+                <p>
+                    <label class="custom-radio-checkbox">
+                            <input class="custom-radio-checkbox__input" type="radio" name="cookies" checked>
+                        <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+                        <span class="cutom-radio-checkbox__text">Acepto los Términos y Condiciones,
+                            la Politica de datos y la Politica de cookies.
+                        </span>
+                    </label>
+                </p>
                 <div id="enviar">
                     <label for="submit"><input type="submit" id="submit" name="submit"></label>
                 </div>
