@@ -1,16 +1,16 @@
-.Mostrar-contrasena, .Ocultar-contrasena{
+.validacion-Error, .validacion-Correcto{
 	background: url(sprites.png) no-repeat;
 }
 
-.Mostrar-contrasena{
+.validacion-Error{
 	background-position: 0 0;
 	width: 20px;
-	height: 17px;
+	height: 20px;
 }
 
-.Ocultar-contrasena{
-	background-position: -30px -2px ;
+.validacion-Correcto{
+	background-position: -25px 0;
 	width: 20px;
-	height: 13px;
+	height: 20px;
 }
 

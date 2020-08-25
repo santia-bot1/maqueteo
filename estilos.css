@@ -51,7 +51,7 @@ input{
     border-color: #00c6ff;
     stroke: 1;
     height: 49px;
-    margin-top: 0px;
+    margin-top: 26px;
 
 }
 #name{
@@ -62,42 +62,44 @@ input{
     font-family: "Body";
     font-size: 20px;
 }
-
 small p{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    align-items: center;
+    font-family: caption;
+    color: #fb8179;
     padding: 0px 0px 0px 26px;
     margin-top: 0px;
     margin-bottom: 0px;
     height: 12px;
-    font-family: caption;
-    color: #fb8179;
 }
-#ulti{
+#ultimo{
     margin-bottom: 26px;
 }
-.container{
+#container{
+    display: flex;
+    text-align: left;
+    align-items: center;
     font-family: caption;
     color: #7D7B7B;
-    margin-bottom: 26px;
+    margin-bottom: 41px;
+    height: 26px;
+    width: 375px;
 }
-.check{
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-}
-.sustitucion{
-    background-image: url();
-}
-.check > .checkbox{
+input[type="checkbox"]{
     display: none;
 }
-.check > .sustitucion{
+input[type="checkbox"] + label span{
     display: inline-block;
     width: 16,5px;
     height: 16,5px;
-    margin-right: 26px;
+    margin: 0px;
+    cursor: pointer;
+    background: url(Sprite.Check.svg) center top no-repeat;
 }
-.check > .checkbox + .sustitucion{
-    background-image: url();
+input[type="checkbox"]:checked + label span {
+    background: url(Sprite.Check.svg) 0px top no-repeat;
 }
 #submit{
     font-family: "Poppins-Medium";
