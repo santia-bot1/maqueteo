@@ -8,9 +8,12 @@
     <link rel="stylesheet" type="text/css" href="estilos.css" >
     <link rel="stylesheet" href="valoracion/*">
     <link rel="stylesheet" type="text/css" href="Poppins.css/*">
+    <link rel="stylesheet" href="Sprite-ver-contraseña.svg">
+    <link rel="stylesheet" href="Spirte-validaciones.png">
     <link rel="stylesheet" href="Sprite.Check.svg">
     <link rel="stylesheet" href="radio-check.png">
     <link rel="stylesheet" href="radio-uncheck.png">
+    <link rel="stylesheet" href="css_sprites.png">
 </head>
 <body>
     <header id="header">
@@ -21,14 +24,15 @@
             <h1>Crear Cuenta</h1>   
         </div>
     </header>
-        <section id="section">
-            <article id="article">
-                <form>
+    <section id="section">
+        <article id="article">
+            <form class="form">
                 <div class="margin-top">
                     <input type="text" id="name" name="name" placeholder="Nombre completo">  
                 </div>
-                <div class="face">
-                    <img src="valoracion/sprites.png">
+                <div id="validacion">
+                    <div class="validacion-correcta"></div>
+                    <div class="validacion-incorrecta"></div>
                 </div>
                 <div class="small">
                     <small><p>Queremos conocer tu nombre</p></small>
@@ -37,12 +41,20 @@
                 <div class="margin-top"> 
                     <input type="email" id="email" name="email" placeholder="Correo electronico">
                 </div>
+                <div id="validacion">
+                    <div class="validacion-correcta"></div>
+                    <div class="validacion-incorrecta"></div>
+                </div>
                 <div class="small">
                     <small><p>Necesitamos tu correo electronico</p></small>
                     <small><p>Por favor verifica tu correo</p></small>
                 </div>
                 <div class="margin-top">
-                    <input type="number" id="number" name="number" placeholder="Celular">
+                    <input type="tel" id="number" name="number" placeholder="Celular">
+                </div>
+                <div id="validacion">
+                    <div class="validacion-correcta"></div>
+                    <div class="validacion-incorrecta"></div>
                 </div>
                 <div class="small">
                     <small><p>Necesitamos conocer tu numero celular</p></small>
@@ -54,21 +66,26 @@
                     <input type="password" id="password" name="password" placeholder="Contraseña">
                 </div>
                 </div>
-                <div id="muestra">
-                    
+                <div id="validacion">
+                    <div class="validacion-correcta"></div>
+                    <div class="validacion-incorrecta"></div>
                 </div>
                 <div class="small">
                     <small><p>Nesecitas una contraseña para continuar</p></small>
                     <small><p>Tu contraseña debe tener de 10 a 20 caracteres</p></small>
-                    <small><p>Por favor incluyeuna letra, un numero y un caracter especial</p></small>
+                    <small class="font"><p>Por favor incluye una letra, 
+                        un numero y un caracter especial</p></small>
                 </div>
                 <div class="margin-top">
                     <input type="password" id="Confirm-Password" name="Confirm-Password" placeholder="Confirmar contraseña">
-                </div> 
+                </div>
+                <div id="validacion">
+                    <div class="validacion-correcta"> </div>
+                    <div class="validacion-incorrecta"></div>
+                </div>
                 <div class="small">
                     <small><p id="ultimo">Tus contraseñas o coinciden</p></small>
                 </div>
-                
                 <p>
                     <label class="custom-radio-checkbox">
                             <input class="custom-radio-checkbox__input" type="radio" name="cookies" checked>
@@ -82,7 +99,27 @@
                     <label for="submit"><input type="submit" id="submit" name="submit"></label>
                 </div>
             </form>
-            </article>
-        </section>
+            <div class="contenedor-veri"></div>
+                <div>
+                    <div class="verificacion"></div>
+                </div>
+                <div>
+                    <p class="vali">
+                        ¡Yuju! Se realizó tu registro
+                    </p>
+                </div>
+            <div class="contenedor-veri2"> 
+                <div>
+                    <div class="verificacion-cursor"></div>
+                </div>
+                </div>
+                <div>
+                    <p class="vali2">
+                        Auch, algo salio mal... Por favor vuelve a intentarlo
+                    </p>
+                </div>
+            </div> 
+        </article>
+    </section>
 </body>
 </html>

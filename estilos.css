@@ -23,19 +23,20 @@
     background-color: #000fff;
     height: 92px;
     display: flex;
-    justify-content: center;
+    
     align-items: center;
 }
 
 h1{
     font-family: "Poppins-Bold";
     font-size: 24;
-    margin: 0px 0px 0px 57px;
+    padding: 0px 0px 0px 57px;
     color:#ffffff;
 }
 .img-prin{
     width: 26,25px;
     height: 11,97px;
+    padding-left: 30px ;
 }
 #article{
     display: flex;
@@ -46,35 +47,59 @@ h1{
 }
 input{
     font-family: "Poppins-Regular";
-    font-size: 20px;
+    font-size: 19px;
     border-radius: 14px;
     border-color: #00c6ff;
     stroke: 1;
+    text-indent: 26px;
     height: 49px;
+
 }
 .margin-top{
+    display: inline-block;
     margin-top: 26px;
+    padding-right: 6px;
+    padding-left: 40px ;
 }
 #name{
     margin-top: 43px;
 }
+#validacion{
+    display:inline-block;
+    text-align: left;
+    align-items: center;
+}
+.validacion-correcta{
+    display: inline-block;
+    background: url(Spirte-validaciones.png) 0px 0px;
+    width: 36px;
+    height: 36px;
+
+}
+.validacion-cursor{
+    display: inline-block;
+    background: url(Spirte-validaciones.png) 36px 0px;
+    width: 36px;
+    height: 36px;
+}
 ::placeholder{
-    padding: 26px;
     font-family: "Body";
     font-size: 20px;
+    text-indent: 26px;
 }
 small p{
     display: flex;
-    flex-direction: column;
-    text-align:left;
+    flex-wrap: wrap;
+    text-align: center;
     align-items: center;
+    text-indent: 90px;
     font-family: caption;
     color: #fb8179;
-    padding: 0px 0px 0px 25px;
     margin-top: 0px;
     margin-bottom: 0px;
     height: 12px;
 }
+
 #ultimo{
     margin-bottom: 25px;
 }
@@ -87,7 +112,6 @@ small p{
 .custom-radio-checkbox__input{
     margin-top: -16px;
     margin-left: 11px;
-    
 }
 .cutom-radio-checkbox__text{
     display: inline-block;
@@ -113,8 +137,43 @@ small p{
 #submit{
     font-family: "Poppins-Medium";
     font-size: 18px;
+    text-indent: -2px;
     border-radius: 100px;
     margin-top: 41px;
+    margin-bottom: 58px;
     width: 171px;
     height: 41px;
 }
+.contenedor-veri{
+    display: flex;
+    text-align: center ;
+    align-items: center;
+}
+.verificacion{
+    display: inline-block;
+    background: url(css_sprites.png) -10px -10px;
+    width: 103px;
+    height: 103px;
+}
+.vali{
+    color: #00c6ff;
+    font-size: 23px;
+}
+.contenedor-veri2{
+
+    text-align: center ;
+    align-items: center;
+}
+.verificacion-cursor{
+    display: inline-block;
+    justify-content: center;
+    background: url(css_sprites.png) -133px -10px;
+    width: 85px;
+    height: 102px;
+}
+.vali2{
+    color: #00c6ff;
+    font-size: 20px;
+
+}
+
