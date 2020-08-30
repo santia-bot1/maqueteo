@@ -20,8 +20,8 @@
     src: url(Poppins-ThinItalic.ttf);
 }
 #header{
-    background-color: #000fff;
     height: 92px;
+    background-color: #000fff;
     display: flex;
     align-items: center;
     text-align: center;
@@ -32,17 +32,19 @@ h1{
     padding: 0px 0px 0px 57px;
     color:#ffffff;
 }
-.img-prin{
-    width: 26,25px;
-    height: 11,97px;
-    padding-left: 25px;
+.activo-cabecera{
+    display: flex;
+    align-items: center;
+    background: url(imagenes-2/atras.png) -10px -69px ;
+    padding: 33px 0px 0px 25px ;
     cursor: pointer;
 }
 #article{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    padding-left: 40px ;
+    padding-left: 40px;
+    align-items: center;
 }
 form{
     display: inline-block;
@@ -73,7 +75,7 @@ input{
 }
 .validacion-correcta{
     display: inline-block;
-    background: url(Spirte-validaciones.png) 0px 0px;
+    background: url(imagenes-2/Spirte-validaciones.png) 0px 0px;
     width: 36px;
     height: 36px;
     cursor: pointer;
@@ -81,7 +83,7 @@ input{
 }
 .validacion-cursor{
     display: inline-block;
-    background: url(Spirte-validaciones.png) 36px 0px;
+    background: url(imagenes-2/Spirte-validaciones.png) 36px 0px;
     width: 36px;
     height: 36px;
     cursor: pointer;
@@ -92,24 +94,24 @@ input{
     text-indent: 26px;
 }
 .mostar-contraseña{
-    background: url(contraseña.png) -10px -10px ;
+    background: url(imagenes-2/contraseña.png) -10px -10px ;
     width: 20px;
     height: 17px;
 }
 .ocutar-contraseña{
-    background: url(contraseña.png) -50px -10px;
+    background: url(imagenes-2/contraseña.png) -50px -10px;
     width: 20px;
     height: 13px;
 
 }
 .info{
-    background: url(INFO.png) -10px -10px;
+    background: url(imagenes-2/INFO.png) -10px -10px;
     width: 20px;
     height: 20px;
     padding-top: 4px;
 }
 .info-2{
-    background: url(info-2.png) -10px -10px;
+    background: url(imagenes-2/info-2.png) -10px -10px;
     width: 250px;
     height: 130px;
     padding-right: 2px;
@@ -151,7 +153,7 @@ small p{
 
 }
 .custom-radio-checkbox__show--radio{
-    background-image: url(radio-uncheck.png) ;
+    background-image: url(imagenes-2/radio-uncheck.png) ;
 }
 .custom-radio-checkbox > .custom-radio-checkbox__show{
     display: inline-block;
@@ -161,7 +163,7 @@ small p{
     background-size: cover;
 }
 .custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--radio{
-    background-image: url(radio-check.png);
+    background-image: url(imagenes-2/radio-check.png);
 }
 #section-2{
     display: flex;
@@ -189,7 +191,7 @@ small p{
 }
 .verificacion{
     display: inline-block;
-    background: url(css_sprites.png) -10px -10px;
+    background: url(imagenes-2/css_sprites.png) -10px -10px;
     width: 103px;
     height: 103px;
 }
@@ -207,7 +209,7 @@ small p{
 .verificacion-cursor{
     display: inline-block;
     justify-content: center;
-    background: url(css_sprites.png) -133px -10px;
+    background: url(imagenes-2/css_sprites.png) -133px -10px;
     width: 85px;
     height: 102px;
 }
