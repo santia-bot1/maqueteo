@@ -23,7 +23,6 @@
     background-color: #000fff;
     height: 92px;
     display: flex;
-    
     align-items: center;
 }
 
@@ -36,14 +35,18 @@ h1{
 .img-prin{
     width: 26,25px;
     height: 11,97px;
-    padding-left: 30px ;
+    padding-left: 25px ;
 }
 #article{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: left;
     text-align: center;
+    padding-left: 40px ;
+}
+form{
+    display: inline-block;
+    margin: 0px;
 }
 input{
     font-family: "Poppins-Regular";
@@ -59,7 +62,6 @@ input{
     display: inline-block;
     margin-top: 26px;
     padding-right: 6px;
-    padding-left: 40px ;
 }
 #name{
     margin-top: 43px;
@@ -92,14 +94,16 @@ small p{
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    text-indent: 90px;
+    text-indent: 55px;
     font-family: caption;
     color: #fb8179;
     margin-top: 0px;
     margin-bottom: 0px;
     height: 12px;
 }
-
+.fonte{
+    font-size: 13px ;
+}
 #ultimo{
     margin-bottom: 25px;
 }
@@ -111,7 +115,7 @@ small p{
 }
 .custom-radio-checkbox__input{
     margin-top: -16px;
-    margin-left: 11px;
+    margin-right: 11px;
 }
 .cutom-radio-checkbox__text{
     display: inline-block;
@@ -136,7 +140,9 @@ small p{
 }
 #submit{
     font-family: "Poppins-Medium";
+    background-color: #000fff ;
     font-size: 18px;
+    color: #ffffff;
     text-indent: -2px;
     border-radius: 100px;
     margin-top: 41px;
@@ -144,8 +150,8 @@ small p{
     width: 171px;
     height: 41px;
 }
-.contenedor-veri{
-    display: flex;
+#contenedor-veri{
+    display:inline-block;
     text-align: center ;
     align-items: center;
 }
@@ -156,12 +162,14 @@ small p{
     height: 103px;
 }
 .vali{
+    display: inline-block;
     color: #00c6ff;
-    font-size: 23px;
+    width: 120px;
+    margin: 0px;
 }
-.contenedor-veri2{
-
-    text-align: center ;
+#contenedor-veri2{
+    display: inline-block;
+    text-align: center;
     align-items: center;
 }
 .verificacion-cursor{
@@ -172,8 +180,10 @@ small p{
     height: 102px;
 }
 .vali2{
+    display: inline-block;
     color: #00c6ff;
-    font-size: 20px;
+    width: 170px;
+    margin: 0px;
 
 }
 
