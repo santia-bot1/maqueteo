@@ -1,61 +1,9 @@
-@font-face{
-    font-family:'Poppins';
-    src: url(Poppins-Black.ttf);
-    src: url(Poppins-BlackItali.ttf);
-    src: url(Poppins-Bold.ttf);
-    src: url(Poppins-BoldItalic.ttf);
-    src: url(Poppins-ExtraBold.ttf);
-    src: url(Poppins-ExtraBoldItalic.ttf);
-    src: url(Poppins-ExtraLight.ttf);
-    src: url(Poppins-ExtraLightItalic.ttf);
-    src: url(Poppins-Italic.ttf);
-    src: url(Poppins-Light.ttf);
-    src: url(Poppins-LightItalic.ttf);
-    src: url(Poppins-Medium.ttf);
-    src: url(Poppins-MediumItalic.ttf);
-    src: url(Poppins-Regular.ttf);
-    src: url(Poppins-SemiBold.ttf);
-    src: url(Poppins-SemiBoldItalic.ttf);
-    src: url(Poppins-Thin.ttf);
-    src: url(Poppins-ThinItalic.ttf);
-}
-#header{
-    height: 92px;
-    background-color: #000fff;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-h1{
-    font-family: "Poppins-Bold";
-    font-size: 24;
-    padding: 0px 0px 0px 57px;
-    color:#ffffff;
-}
-.activo-cabecera{
-    display: flex;
-    align-items: center;
-    background: url(imagenes-2/atras.png) -10px -69px ;
-    padding: 33px 0px 0px 25px ;
-    cursor: pointer;
-}
-#article{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-left: 40px;
-    align-items: center;
-}
-form{
-    display: inline-block;
-    margin: 0px;
-}
+
 input{
     font-family: "Poppins-Regular";
     font-size: 19px;
     border-radius: 14px;
     border-color: #00c6ff;
-    stroke: 1;
     text-indent: 26px;
     height: 49px;
 
@@ -73,20 +21,20 @@ input{
     text-align: left;
     align-items: center;
 }
-.validacion-correcta{
-    display: inline-block;
-    background: url(imagenes-2/Spirte-validaciones.png) 0px 0px;
-    width: 36px;
-    height: 36px;
-    cursor: pointer;
+.validacion-correcta, .validacion-cursor{
+    background: url(Spirte-validaciones.png);
 
 }
-.validacion-cursor{
-    display: inline-block;
-    background: url(imagenes-2/Spirte-validaciones.png) 36px 0px;
+.validacion-correcta{
+    
+    background-position: 0px 0px;
     width: 36px;
     height: 36px;
-    cursor: pointer;
+}
+.validacion-cursor{
+    background-position:36px 0px;
+    width: 36px;
+    height: 36px;
 }
 ::placeholder{
     font-family: "Body";
@@ -94,24 +42,24 @@ input{
     text-indent: 26px;
 }
 .mostar-contraseña{
-    background: url(imagenes-2/contraseña.png) -10px -10px ;
+    background: url(images/contraseña.png) -10px -10px ;
     width: 20px;
     height: 17px;
 }
 .ocutar-contraseña{
-    background: url(imagenes-2/contraseña.png) -50px -10px;
+    background: url(images/contraseña.png) -50px -10px;
     width: 20px;
     height: 13px;
 
 }
 .info{
-    background: url(imagenes-2/INFO.png) -10px -10px;
+    background: url(images/INFO.png) -10px -10px;
     width: 20px;
     height: 20px;
     padding-top: 4px;
 }
 .info-2{
-    background: url(imagenes-2/info-2.png) -10px -10px;
+    background: url(images/info-2.png) -10px -10px;
     width: 250px;
     height: 130px;
     padding-right: 2px;
@@ -153,7 +101,7 @@ small p{
 
 }
 .custom-radio-checkbox__show--radio{
-    background-image: url(imagenes-2/radio-uncheck.png) ;
+    background-image: url(images/radio-uncheck.png) ;
 }
 .custom-radio-checkbox > .custom-radio-checkbox__show{
     display: inline-block;
@@ -163,7 +111,7 @@ small p{
     background-size: cover;
 }
 .custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--radio{
-    background-image: url(imagenes-2/radio-check.png);
+    background-image: url(images/radio-check.png);
 }
 #section-2{
     display: flex;
@@ -191,7 +139,7 @@ small p{
 }
 .verificacion{
     display: inline-block;
-    background: url(imagenes-2/css_sprites.png) -10px -10px;
+    background: url(images/css_sprites.png) -10px -10px;
     width: 103px;
     height: 103px;
 }
@@ -209,7 +157,7 @@ small p{
 .verificacion-cursor{
     display: inline-block;
     justify-content: center;
-    background: url(imagenes-2/css_sprites.png) -133px -10px;
+    background: url(images/css_sprites.png) -133px -10px;
     width: 85px;
     height: 102px;
 }
@@ -218,6 +166,12 @@ small p{
     color: #00c6ff;
     width: 170px;
     margin: 0px;
-
+}
+.aside__panel{
+    background: #00c6ff;
 }
 
+@media(max-width:768px) {
+    .aside__panel { display: none;}
+    .section__register {width:100%;}
+}

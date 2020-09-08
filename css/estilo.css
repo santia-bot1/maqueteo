@@ -1,0 +1,292 @@
+@font-face{
+    font-family:'Poppins';
+    src: url(Poppins-Black.ttf);
+    src: url(Poppins-BlackItali.ttf);
+    src: url(Poppins-Bold.ttf);
+    src: url(Poppins-BoldItalic.ttf);
+    src: url(Poppins-ExtraBold.ttf);
+    src: url(Poppins-ExtraBoldItalic.ttf);
+    src: url(Poppins-ExtraLight.ttf);
+    src: url(Poppins-ExtraLightItalic.ttf);
+    src: url(Poppins-Italic.ttf);
+    src: url(Poppins-Light.ttf);
+    src: url(Poppins-LightItalic.ttf);
+    src: url(Poppins-Medium.ttf);
+    src: url(Poppins-MediumItalic.ttf);
+    src: url(Poppins-Regular.ttf);
+    src: url(Poppins-SemiBold.ttf);
+    src: url(Poppins-SemiBoldItalic.ttf);
+    src: url(Poppins-Thin.ttf);
+    src: url(Poppins-ThinItalic.ttf);
+}
+@import url(../images/verificacion.png);
+@import url(../images/atras.png);
+
+.container-master{
+    display:flex;
+	flex-flow:row wrap;
+}
+.header{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 92px;
+    background-color: #000fff;
+}
+.behind{
+    background: url(../images/atras.png) -10px -69px;
+    width: 13px;
+    height: 27px;
+    margin-left: 25px;
+}
+.head{
+    font-family: "Poppins-Bold";
+    font-size: 16px ;
+    padding-left: 56px;
+    color: #ffffff;
+}
+.section__register{
+    display:-webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row;
+    flex-flow: row;
+}
+.article{
+    display: flex;
+    flex-flow: column wrap;
+    width: 92%;
+    padding-left: 40px;
+    -webkit-flex: 1 1 50%;
+    flex: 1 1 50%;
+    -webkit-order: 2 ;
+    order: 2;
+}
+.input{
+    height: 39px;
+    width: 240px;
+    border-radius: 14px;
+    border-width: 1px;
+    border-color: #00c6ff;
+    padding-left: 26px;
+    color: #BEBCBC;
+    flex-grow: 1;
+    color:inherit default;
+}
+.input-name{
+    margin-top: 43px;
+}
+.margin-input{
+    margin-top: 25px;
+}
+.container-validation{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.validation{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    margin-left: 6px;
+}
+.correct-validation{
+    background: url(../images/Spirte-validaciones.png) 0px 0px;
+    width: 36px;
+    height: 36px;
+}
+.wrong-validation{
+    background: url(../images/Spirte-validaciones.png) 36px 0px;
+    width: 36px;
+    height: 36px;
+}
+.small{
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: flex-start;
+    padding-left: 26px;
+}
+.p-style{
+    color: #fb8179;
+    margin: 0px;
+    font-size: 12px;
+}
+input[type="password"]{
+    background: url(../images/contraseña.png) -10px -10px ;
+    background-position: 230px -7px;
+    background-repeat: no-repeat;
+    
+    background: url(../images/INFO.png) -10px -10px;
+    background-position: 230px 0px;
+    background-repeat: no-repeat;
+}
+
+.info-2{
+    background: url(../images/info-2.png) -10px -10px;
+    width: 250px;
+    height: 130px;
+    padding-right: 2px;
+}
+.custom-radio-checkbox{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 26px 0px;
+    font-size: 14px;
+}
+.custom-radio-checkbox__show--checkbox{
+    background: url(../images/checkbox-check.png) -46px -10px;
+}
+.custom-radio-checkbox > .custom-radio-checkbox__show{
+    display: inline-block;
+    width: 16,5px;
+    height: 16,5px;
+    margin-right: 12px;
+    background-size: cover;
+}
+.custom-radio-checkbox > .custom-radio-checkbox__input:checked + .custom-radio-checkbox__show--checkbox{
+    background: url(../images/checkbox-uncheck.png) -10px -10px;
+}
+.cutom-radio-checkbox__text{
+    color: #7D7B7B;
+    font-family: "Poppins-Regular";
+}
+span u{
+    color: #000fff ;
+}
+.send{
+    display: flex;
+    justify-content: center;
+    padding-right: 40px;
+}
+#submit{
+    height: 41px;
+    width: 172px;
+    margin-bottom: 58px;
+    font-weight: bold;
+    background-color: #000fff;
+    color: #ffffff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: 0px 4px 4px #3d3b3b;
+}
+.container-noun{
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.verification-end{
+    background: url(../images/verificacion.png) -10px -10px ;
+    width: 103px;
+    height: 103px;
+}
+.validation-end{
+    font-family: "Poppins-Regular" ;
+    font-size: 24px;
+    color: #00c6ff;
+}
+
+.verification-end-2{
+    background: url(../images/verificacion.png) -133px -10px ;
+    background-repeat: repeat;
+    width: 85px;
+    height: 102px;
+}
+.validation-end-2{
+    font-family: "Poppins-Regular" ;
+    font-size: 24px;
+    color: #00c6ff;
+}
+aside{
+    display: flex;
+    flex:1 1 30%;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+.aside__panel{
+    background-color: #00c6ff;
+    width: 623px;
+}
+.section__register > aside{
+    -webkit-flex: 1 1 50%;
+    flex: 1 1 50%;
+    -webkit-order: 1 ;
+    order: 1;
+}
+
+.head:hover{
+    text-decoration: underline #ffffff;
+}
+.behind:hover{
+    background: url(../images/atras.png) -69px -10px;
+    height: 39px;
+    width: 39px;
+}
+.head:focus{
+    text-decoration: underline #00c6ff;
+    color: #00c6ff;
+    border-width: 1,5px;
+}
+.behind:focus{
+    background: url(../images/atras.png) -10px -10px;
+    height: 39px;
+    width: 39px;
+    
+}
+
+input#name:hover, input#email:hover, input#phone:hover, input#password:hover, input#Confirm-Password:hover{
+    cursor: default;
+    border-color: #000fff;
+}
+input#name:focus, input#email:focus, input#phone:focus, input#password:focus, input#Confirm-Password:focus{
+    border: 1,5px;
+    outline: none;
+}
+input#name:disabled, input#email:disabled, input#phone:disabled, input#password:disabled, input#Confirm-Password:disabled{
+    background-color: #d8d8d8 ;
+    color: #BEBCBC;
+}
+
+input#submit:hover{
+    cursor:pointer;
+    color: #00c6ff;
+}
+
+@media (max-width:768px){
+    .aside__panel{
+        display: none;
+    }
+    .header{
+        height: 100px;
+    }
+}
+@media(min-width:768px){
+    .head{
+        padding-left: 40px;
+    }
+    .behind{
+        padding-left: 154px;
+    }
+    .article{
+        padding-left: 115px;
+    }
+    .section__register{
+        width: 95%;
+    }
+    .input{
+        width: 400px;
+    }
+    .p-style{
+        font-size: 16px ;
+    }
+    input[type="password"]{
+        background-position: 300px -7px;
+        background-position: 300px 0px;
+    }
+}
