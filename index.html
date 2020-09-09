@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ConectaTiendas</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" >
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" >
     <link rel="stylesheet" type="text/css" href="css/Poppins.css/Poppins">
     <link href="../maqueteo/images/atras.png">
     <link href="../maqueteo/images/Spirte-validaciones.png">
@@ -15,122 +15,132 @@
     <link href="../maqueteo/images/contraseña.png">
     <link href="../maqueteo/images/checkbox-uncheck.png">
     <link href="../maqueteo/images/checkbox-check.png">
+    <link href="../maqueteo/images/hamburguesa.svg">
+    <link href="../maqueteo/images/close-menu.png">
+    <link href="../maqueteo/images/favicon.png">
+    <link href="../maqueteo/images/logo-header.svg">
 </head>
 <body>
-    <header class="header">
+    <header id="header">
+        <div class="logo-header"></div>
+        <div class="drop-down"></div>
+    </header>
+    <header class="header-registration">
         <div class="behind"></div>
         <div class="head">
             <h1>Crear Cuenta</h1>
         </div>
     </header>
-    <div class="conteiner-master">
-    <section class="section__register">
-        <article class="article">
-            <form class="form">
-                <div class="container-validation">
-                    <div class="input-name">
-                        <input type="text" class="input" id="name" name="name" placeholder="Nombre completo">  
-                    </div>
-                    <div class="validation">
-                        <div class="correct-validation"></div>
-                        <div class="wrong-validation"></div>
-                    </div>
-                    </div>
-                    <div class="small">
-                        <small><p class="p-style">Queremos conocer tu nombre</p></small>
-                        <small><p class="p-style">favor incluye solo letras</p></small>
-                    </div>
-                <div class="container-validation">
-                    <div class="margin-input"> 
-                        <input type="email" class="input" id="email" name="email" placeholder="Correo electronico">
-                    </div>
-                    <div class="validation">
-                        <div class="correct-validation"></div>
-                        <div class="wrong-validation"></div>
-                    </div>
-                    </div>
-                    <div class="small">
-                        <small><p class="p-style">Necesitamos tu correo electronico</p></small>
-                        <small><p class="p-style">Por favor verifica tu correo</p></small>
-                    </div>
-                <div class="container-validation">
-                    <div class="margin-input" >
-                            <input type="tel" class="input" id="phone" name="phone" placeholder="Celular">
-                    </div>
-                    <div class="validation">
-                        <div class="correct-validation"></div>
-                        <div class="wrong-validation"></div>
-                    </div>
-                </div>
-                    <div class="small">
-                        <small><p class="p-style">Necesitamos conocer tu numero celular</p></small>
-                        <small><p class="p-style">Por favor incluye solo numeros</p></small>
-                        <small><p class="p-style">Por favor verifica tu numero de celular</p></small>
-                    </div>
-                <div class="container-validation">
-                    <div class="contra">
-                        <div class="margin-input"></div>
-                        <input type="password" class="input" id="password" name="password" placeholder="Contraseña" >
-                    </div>
-                    <div class="validation">
-                        <div class="correct-validation"></div>
-                        <div class="wrong-validation"></div>
-                    </div>
-                </div> 
-                    <div class="container-info">
-                    <div class="mostar-contraseña"></div>
-                        <div class="ocultar-contraseña"></div>
-                        <div class="info"></div>
-                    </div>
-                        <div class="info-2"></div>
-                    <div class="small">
-                        <small><p class="p-style" >Nesecitas una contraseña para continuar</p></small>
-                        <small><p class="p-style" >Tu contraseña debe tener de 10 a 20 caracteres</p></small>
-                        <small><p class="p-style" >Por favor incluye una letra, un número y un caracter</p></small>
-                    </div>
-                <div class="container-validation">
-                    <div class="margin-input">
-                        <input type="password" class="input" id="Confirm-Password" name="Confirm-Password" placeholder="Confirmar contraseña">
-                    </div>
-                    <div class="validation">
-                        <div class="correct-validation"></div>
-                        <div class="wrong-validation"></div>
-                    </div>
-                </div>
-                    <div class="small">
-                        <small><p class="p-style" class="small-check">Tus contraseñas o coinciden</p></small>
-                    </div>
-                    <p>
-                        <label class="custom-radio-checkbox">
-                                <input class="custom-radio-checkbox__input" type="radio" name="cookies" checked>
-                            <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
-                            <span class="cutom-radio-checkbox__text"> Acepto Los <u>Términos y Condiciones</u>,
-                                la <u>Politica de datos</u> y la <u>Politica de cookies</u>.
-                            </span>
-                        </label>
-                    </p>
-                    <div class="send">
-                            <label for="submit"><input type="submit" id="submit" name="submit"> </label>
-                    </div>
-                    <div class="container-noun">
-                        <div class="container-verification"></div>
-                            <div class="verification-end"></div>
-                            <div class="validation-end">
-                                <p>¡Yuju! Se realizó tu registro</p>
-                            </div>
-                            <div class="container-verification-2"> </div>
-                            <div class="verification-end-2"></div>
-                        <div>
-                            <p class="validation-end-2">
-                                Auch, algo salio mal... Por favor vuelve a intentarlo
-                            </p>
+    <body>
+        <div class="conteiner-master">
+        <section class="section__register">
+            <article class="article">
+                <form class="form">
+                    <div class="container-validation">
+                        <div class="input-name">
+                            <input type="text" class="input" id="name" name="name" placeholder="Nombre completo">  
+                        </div>
+                        <div class="validation">
+                            <div class="correct-validation"></div>
+                            <div class="wrong-validation"></div>
+                        </div>
+                        </div>
+                        <div class="small">
+                            <small><p class="p-style">Queremos conocer tu nombre</p></small>
+                            <small><p class="p-style">favor incluye solo letras</p></small>
+                        </div>
+                    <div class="container-validation">
+                        <div class="margin-input"> 
+                            <input type="email" class="input" id="email" name="email" placeholder="Correo electronico">
+                        </div>
+                        <div class="validation">
+                            <div class="correct-validation"></div>
+                            <div class="wrong-validation"></div>
+                        </div>
+                        </div>
+                        <div class="small">
+                            <small><p class="p-style">Necesitamos tu correo electronico</p></small>
+                            <small><p class="p-style">Por favor verifica tu correo</p></small>
+                        </div>
+                    <div class="container-validation">
+                        <div class="margin-input" >
+                                <input type="tel" class="input" id="phone" name="phone" placeholder="Celular">
+                        </div>
+                        <div class="validation">
+                            <div class="correct-validation"></div>
+                            <div class="wrong-validation"></div>
                         </div>
                     </div>
-                </form> 
-            </article>
-            <aside class="aside__panel">
-            </aside>
-        </section>
-    </div>
+                        <div class="small">
+                            <small><p class="p-style">Necesitamos conocer tu numero celular</p></small>
+                            <small><p class="p-style">Por favor incluye solo numeros</p></small>
+                            <small><p class="p-style">Por favor verifica tu numero de celular</p></small>
+                        </div>
+                    <div class="container-validation">
+                        <div class="contra">
+                            <div class="margin-input"></div>
+                            <input type="password" class="input" id="password" name="password" placeholder="Contraseña" >
+                        </div>
+                        <div class="validation">
+                            <div class="correct-validation"></div>
+                            <div class="wrong-validation"></div>
+                        </div>
+                    </div> 
+                        <div class="container-info">
+                        <div class="mostar-contraseña"></div>
+                            <div class="ocultar-contraseña"></div>
+                            <div class="info"></div>
+                        </div>
+                            <div class="info-2"></div>
+                        <div class="small">
+                            <small><p class="p-style" >Nesecitas una contraseña para continuar</p></small>
+                            <small><p class="p-style" >Tu contraseña debe tener de 10 a 20 caracteres</p></small>
+                            <small><p class="p-style" >Por favor incluye una letra, un número y un caracter</p></small>
+                        </div>
+                    <div class="container-validation">
+                        <div class="margin-input">
+                            <input type="password" class="input" id="Confirm-Password" name="Confirm-Password" placeholder="Confirmar contraseña">
+                        </div>
+                        <div class="validation">
+                            <div class="correct-validation"></div>
+                            <div class="wrong-validation"></div>
+                        </div>
+                    </div>
+                        <div class="small">
+                            <small><p class="p-style" class="small-check">Tus contraseñas o coinciden</p></small>
+                        </div>
+                        <p>
+                            <label class="custom-radio-checkbox">
+                                    <input class="custom-radio-checkbox__input" type="radio" name="cookies" checked>
+                                <span class="custom-radio-checkbox__show custom-radio-checkbox__show--radio"></span>
+                                <span class="cutom-radio-checkbox__text"> Acepto Los <u>Términos y Condiciones</u>,
+                                    la <u>Politica de datos</u> y la <u>Politica de cookies</u>.
+                                </span>
+                            </label>
+                        </p>
+                        <div class="send">
+                                <label for="submit"><input type="submit" id="submit" name="submit"> </label>
+                        </div>
+                        <div class="container-noun">
+                            <div class="container-verification"></div>
+                                <div class="verification-end"></div>
+                                <div class="validation-end">
+                                    <p>¡Yuju! Se realizó tu registro</p>
+                                </div>
+                                <div class="container-verification-2"> </div>
+                                <div class="verification-end-2"></div>
+                            <div>
+                                <p class="validation-end-2">
+                                    Auch, algo salio mal... Por favor vuelve a intentarlo
+                                </p>
+                            </div>
+                        </div>
+                    </form> 
+                </article>
+                <aside class="aside__panel">
+                </aside>
+            </section>
+        </div>
+    </body>
+    </html>
 </body>
-</html>
